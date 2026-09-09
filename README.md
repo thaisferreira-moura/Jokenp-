@@ -21,7 +21,7 @@ A interface foi desenhada com atenção aos detalhes, adotando uma paleta de cor
 ## Como Compilar e Testar
 1. **Clonar o repositório:**
    No seu terminal, execute o comando:
-   `git clone [COLE_AQUI_O_SEU_LINK_DO_GITHUB]`
+   `git clone [https://github.com/thaisferreira-moura/Jokenp-.git]`
 
 2. **Abrir o projeto:**
    Inicie o Android Studio, selecione "Open" e navegue até a pasta do projeto clonado.
@@ -35,4 +35,4 @@ A interface foi desenhada com atenção aos detalhes, adotando uma paleta de cor
 
 ## Informações Acadêmicas
 * **Disciplina:** Programação de Dispositivos Móveis II
-* **Desenvolvido por:** [Escreva Seu Nome Aqui]
+* **Desenvolvido por:** [Thais Ferreira de Moura]
