@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jokenpô"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchMelhorDe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Melhor de 3"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Placar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_round"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/txtPlacarUsuario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Você: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" x "
+                android:textSize="20sp"
+                android:textColor="@color/colorText"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/txtPlacarPC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PC: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça sua escolha:"
+            android:textSize="18sp"
+            android:textColor="@color/colorText"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Opções -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/btnPedra"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Pedra"
+                android:background="@drawable/btn_round"
+                android:textColor="@color/colorButtonText"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnPapel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Papel"
+                android:background="@drawable/btn_round"
+                android:textColor="@color/colorButtonText"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnTesoura"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Tesoura"
+                android:background="@drawable/btn_round"
+                android:textColor="@color/colorButtonText"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Resultados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/txtEscolhaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sua escolha: -"
+                android:textSize="16sp"
+                android:textColor="@color/colorText"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/txtEscolhaPC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Computador: -"
+                android:textSize="16sp"
+                android:textColor="@color/colorText"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/txtResultadoRodada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado da rodada..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+                
+            <TextView
+                android:id="@+id/txtVencedorPartida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Limpar / Nova Partida"
+            android:background="@drawable/btn_round_accent"
+            android:textColor="@color/colorButtonText"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>
